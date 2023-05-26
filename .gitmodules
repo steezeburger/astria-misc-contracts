@@ -18,3 +18,6 @@
 [submodule "lib/v3-staker"]
 	path = lib/v3-staker
 	url = https://github.com/uniswap/v3-staker
+[submodule "lib/swap-router-contracts"]
+	path = lib/swap-router-contracts
+	url = https://github.com/uniswap/swap-router-contracts
