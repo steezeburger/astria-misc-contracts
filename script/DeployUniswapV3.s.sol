@@ -22,9 +22,7 @@ import {BaseScript} from "./Base.s.sol";
 
 contract DeployUniswapV3 is BaseScript {
     // Config
-    // TODO - replace with arg for weth9 address
-    // FIXME - can forge scripts take arguments?
-    address private weth9Address = address(0x1412E2127D457A7a10a620a3F5b1aEbc8411BB2A);
+    address private weth9Address = address(vm.envAddress("WETH9_ADDRESS"));
     bytes32 private value = keccak256(abi.encodePacked("ETH"));
     bytes32 private nativeCurrencyLabelBytes = bytes32(uint256(0x1338));
     // NOTE - we're not actually running v2 uniswap so this is just a dummy address
