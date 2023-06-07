@@ -26,5 +26,8 @@
     "lint:sol": "forge fmt --check && pnpm solhint \"{script,src,test}/**/*.sol\"",
     "prettier:check": "prettier --check \"**/*.{json,md,yml}\"",
     "prettier:write": "prettier --write \"**/*.{json,md,yml}\""
+  },
+  "dependencies": {
+    "base64-sol": "^1.1.0"
   }
 }

@@ -6,6 +6,8 @@ import {stdStorage, StdStorage, Test} from "forge-std/Test.sol";
 import "./Utilities.sol";
 import "../../src/SteezeToken.sol";
 
+// TODO - re-implement tokens as CustomToken that lets us create new tokens.
+// That way we don't have to inherit from each coin for the tests.
 contract BaseSetup is SteezeToken, Test {
     Utilities internal utils;
     address payable[] internal users;

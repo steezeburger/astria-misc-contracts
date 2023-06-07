@@ -1,5 +1,10 @@
 lockfileVersion: '6.0'
 
+dependencies:
+  base64-sol:
+    specifier: ^1.1.0
+    version: 1.1.0
+
 devDependencies:
   prettier:
     specifier: ^2.8.7
@@ -99,6 +104,10 @@ packages:
   /balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: true
+
+  /base64-sol@1.1.0:
+    resolution: {integrity: sha512-mksLxtFyBcXd3LYK5UxyMj29YR//zoaeXpJaKRbnLQC0E99oCJl7VpKaJDXWAuTvnhxBU9XNYzhxSL8umsrxWg==}
+    dev: false
 
   /brace-expansion@2.0.1:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
