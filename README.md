@@ -33,6 +33,7 @@ dotenv -- bash -c 'yarn start -pk $PRIVATE_KEY \
   -j $JSON_RPC \
   -w9 $WETH9_ADDRESS \
   -ncl $NATIVE_CURRENCY_LABEL \
+  -g 0 \
   -o $OWNER_ADDRESS \
   -c $CONFIRMATIONS'
 ```

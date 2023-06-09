@@ -23,8 +23,7 @@ import {BaseScript} from "./Base.s.sol";
 contract DeployUniswapV3 is BaseScript {
     // Config
     address private weth9Address = address(vm.envAddress("WETH9_ADDRESS"));
-    bytes32 private value = keccak256(abi.encodePacked("ETH"));
-    bytes32 private nativeCurrencyLabelBytes = bytes32(uint256(0x1338));
+    bytes32 private nativeCurrencyLabelBytes = keccak256(abi.encodePacked("ETH"));
     // NOTE - we're not actually running v2 uniswap so this is just a dummy address
     address private v2CoreFactoryAddress = address(0x1339);
 
