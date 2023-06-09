@@ -46,9 +46,12 @@ w/ forge
 pnpm install
 
 dotenv -- bash -c 'forge script script/DeployUniswapv3.s.sol:DeployUniswapV3 \
+  --optimizer-runs 2 \
   --private-key $PRIVATE_KEY \
   --rpc-url $JSON_RPC \
-  --broadcast -vvvvv'
+  --chain-id 1337 \
+  --sender 0xb0E31D878F49Ec0403A25944d6B1aE1bf05D17E1 \
+  --broadcast --skip-simulation -vvvvv'
 ```
 
 * ERC-20
