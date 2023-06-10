@@ -47,7 +47,10 @@ contract DeployUniswapV3 is BaseScript {
 
     bytes private emptyBytes;
 
-    function run() public broadcaster {
+    function run() external {
+        uint256 privateKey = vm.envUint("PRIVATE_KEY");
+        vm.startBroadcast(privateKey);
+
         // DEPLOY_V3_CORE_FACTORY
         v3CoreFactoryAddress = new UniswapV3Factory();
         // ADD_1BP_FEE_TIER
@@ -106,5 +109,7 @@ contract DeployUniswapV3 is BaseScript {
         assert(proxyAdminAddress.owner() == msg.sender);
 
         console.log(msg.sender);
+
+        vm.stopBroadcast();
     }
 }

@@ -28,12 +28,15 @@ cd deploy-v3
 # create .env file and fill it with envars you see in the command below. you don't have to use dotenv, but it's convenient.
 # NOTE - the private key here requires a prefix of "0x"
 touch .env
+
+# NOTE - make sure to delete state.json between restarts of your chain!
+rm state.json
+
 # call command with dotenv
 dotenv -- bash -c 'yarn start -pk $PRIVATE_KEY \
   -j $JSON_RPC \
   -w9 $WETH9_ADDRESS \
   -ncl $NATIVE_CURRENCY_LABEL \
-  -g 0 \
   -o $OWNER_ADDRESS \
   -c $CONFIRMATIONS'
 ```
@@ -50,7 +53,7 @@ dotenv -- bash -c 'forge script script/DeployUniswapv3.s.sol:DeployUniswapV3 \
   --private-key $PRIVATE_KEY \
   --rpc-url $JSON_RPC \
   --chain-id 1337 \
-  --sender 0xb0E31D878F49Ec0403A25944d6B1aE1bf05D17E1 \
+  --slow \
   --broadcast --skip-simulation -vvvvv'
 ```
 
