@@ -52,7 +52,7 @@ dotenv -- bash -c 'forge script script/DeployUniswapv3.s.sol:DeployUniswapV3 \
   --optimizer-runs 2 \
   --private-key $PRIVATE_KEY \
   --rpc-url $JSON_RPC \
-  --chain-id 1337 \
+  --chain-id 912559 \
   --slow \
   --broadcast --skip-simulation -vvvvv'
 ```
