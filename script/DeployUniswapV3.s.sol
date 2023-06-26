@@ -17,10 +17,9 @@ import {SwapRouter02} from "@uniswap/swap-router-contracts/contracts/SwapRouter0
 import {ProxyAdmin, TransparentUpgradeableProxy} from "@openzeppelin/contracts/proxy/ProxyAdmin.sol";
 
 import {console} from "forge-std/console.sol";
+import {Script} from "forge-std/Script.sol";
 
-import {BaseScript} from "./Base.s.sol";
-
-contract DeployUniswapV3 is BaseScript {
+contract DeployUniswapV3 is Script {
     // Config
     address private weth9Address = address(vm.envAddress("WETH9_ADDRESS"));
     bytes32 private nativeCurrencyLabelBytes = keccak256(abi.encodePacked("ETH"));

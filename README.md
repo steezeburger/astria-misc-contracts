@@ -48,7 +48,7 @@ w/ forge
 # there is a map in foundry.toml that maps "base64-sol" to the node module directory.
 pnpm install
 
-dotenv -- bash -c 'forge script script/DeployUniswapv3.s.sol:DeployUniswapV3 \
+dotenv -- bash -c 'forge script script/DeployUniswapV3.s.sol:DeployUniswapV3 \
   --optimizer-runs 2 \
   --private-key $PRIVATE_KEY \
   --rpc-url $JSON_RPC \
