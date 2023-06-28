@@ -1,3 +1,12 @@
+# Status: Archived
+This repository has been archived and is no longer maintained.
+
+![status: inactive](https://img.shields.io/badge/status-inactive-red.svg)
+
+## Anything of interest here has been implemented in a (slightly) cleaner monorepo that can be found at https://github.com/astriaorg/astria-web3. This repo also contains other fun things like a faucet and a web3 frontend.
+
+---
+
 ## dependencies
 
 * [foundry and forge](https://github.com/foundry-rs/foundry)
